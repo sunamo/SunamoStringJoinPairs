@@ -1,6 +1,5 @@
 namespace SunamoStringJoinPairs;
 
-
 public class SHJoinPairs
 {
     public static string JoinPairs(params string[] parts)
