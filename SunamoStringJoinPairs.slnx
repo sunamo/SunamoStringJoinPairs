@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="SunamoStringJoinPairs.Tests\\SunamoStringJoinPairs.Tests.csproj" />
+  <Project Path="RunnerStringJoinPairs\\RunnerStringJoinPairs.csproj" />
+  <Project Path="SunamoStringJoinPairs\SunamoStringJoinPairs.csproj" />
+</Solution>
