@@ -1,6 +1,6 @@
 # SunamoStringJoinPairs
 
-Concatenation of pairs on one line with two definable delimiters
+A lightweight .NET library for concatenating string pairs with two configurable delimiters.
 
 ## Overview
 
@@ -10,11 +10,12 @@ SunamoStringJoinPairs is part of the Sunamo package ecosystem, providing modular
 
 ### Key Classes
 
-- **SHJoinPairs**
+- **SHJoinPairs** - Provides methods for joining string pairs with configurable delimiters.
 
 ### Key Methods
 
-- `JoinPairs()`
+- `JoinPairs(params string[] parts)` - Joins pairs using semicolons as default delimiters.
+- `JoinPairs(string firstDelimiter, string secondDelimiter, params string[] parts)` - Joins pairs using custom delimiters.
 
 ## Installation
 
@@ -22,17 +23,13 @@ SunamoStringJoinPairs is part of the Sunamo package ecosystem, providing modular
 dotnet add package SunamoStringJoinPairs
 ```
 
+## Target Frameworks
+
+`net10.0`, `net9.0`, `net8.0`
+
 ## Dependencies
 
-- **Microsoft.Extensions.Logging.Abstractions** (v9.0.3)
-
-## Package Information
-
-- **Package Name**: SunamoStringJoinPairs
-- **Version**: 25.3.29.1
-- **Target Framework**: net9.0
-- **Category**: Platform-Independent NuGet Package
-- **Source Files**: 6
+None (standalone package).
 
 ## Related Packages
 
@@ -40,4 +37,4 @@ This package is part of the Sunamo package ecosystem. For more information about
 
 ## License
 
-See the repository root for license information.
+MIT

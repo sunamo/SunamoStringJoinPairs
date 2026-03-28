@@ -1,20 +1,35 @@
-### SunamoStringJoinPairs
+# SunamoStringJoinPairs
 
-Part of PlatformIndependentNuGetPackages:
+A lightweight .NET library for concatenating string pairs with two configurable delimiters.
 
-- [nuget.org](https://www.nuget.org/profiles/sunamo)
-- [github.org](https://github.com/sunamo/PlatformIndependentNuGetPackages)
+## Usage
 
-Another links:
+```csharp
+// Default delimiters (semicolons)
+var result = SHJoinPairs.JoinPairs("key1", "value1", "key2", "value2");
+// Result: "key1;value1;key2;value2;"
 
-- [Developer site](https://sunamo.cz)
+// Custom delimiters
+var result = SHJoinPairs.JoinPairs("=", ",", "key1", "value1", "key2", "value2");
+// Result: "key1=value1,key2=value2,"
+```
 
-Request for new features / bug report / etc: [Mail](mailto:radek.jancik@sunamo.cz) or on GitHub
+## Installation
+
+```bash
+dotnet add package SunamoStringJoinPairs
+```
+
 ## Target Frameworks
 
-**TargetFrameworks:** `net10.0;net9.0;net8.0`
+`net10.0`, `net9.0`, `net8.0`
 
-**Reason:** Code uses C# 12.0 features (collection expressions, primary constructors) or dependencies requiring .NET 8.0+:
-- Collection expressions `[]` syntax requires C# 12.0 (net8.0+)
-- Primary constructors require C# 12.0 (net8.0+) 
-- Entity Framework Core 9.x requires net8.0+
+## Links
+
+- [NuGet](https://www.nuget.org/profiles/sunamo)
+- [GitHub](https://github.com/sunamo/PlatformIndependentNuGetPackages)
+- [Developer site](https://sunamo.cz)
+
+## License
+
+MIT
