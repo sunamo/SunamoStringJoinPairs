@@ -1,5 +1,10 @@
 # SunamoStringJoinPairs
 
+## Short description
+
+Malá knihovna pro spojování dvojic řetězců pomocí dvou konfigurovatelných oddělovačů. Součást sbírky pinp s testy a Runnerem.
+
+
 A lightweight .NET library for concatenating string pairs with two configurable delimiters.
 
 ## Overview
