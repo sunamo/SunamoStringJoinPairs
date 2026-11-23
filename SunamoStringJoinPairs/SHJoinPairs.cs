@@ -28,7 +28,9 @@ public class SHJoinPairs
         for (var i = 0; i < parts.Length; i++)
         {
             stringBuilder.Append(parts[i++] + firstDelimiter);
-            stringBuilder.Append(parts[i] + secondDelimiter);
+            // An odd count leaves the last key without a value.
+            if (i < parts.Length)
+                stringBuilder.Append(parts[i] + secondDelimiter);
         }
 
         return stringBuilder.ToString();
