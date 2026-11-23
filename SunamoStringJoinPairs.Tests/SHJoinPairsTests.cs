@@ -70,4 +70,15 @@ public class SHJoinPairsTests
 
         Assert.Equal("=,", result);
     }
+
+    /// <summary>
+    /// Tests that an odd count of parts keeps the last key without a value instead of failing.
+    /// </summary>
+    [Fact]
+    public void JoinPairs_OddCount_KeepsLastKey()
+    {
+        var result = SHJoinPairs.JoinPairs(":", " ", "a", "1", "b");
+
+        Assert.Equal("a:1 b:", result);
+    }
 }
